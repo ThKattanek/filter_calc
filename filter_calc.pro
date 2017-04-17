@@ -13,8 +13,16 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    wave_buffer_class.cpp \
+    qcustomplot/qcustomplot.cpp \
+    osc_class.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    wave_buffer_class.h \
+    qcustomplot/qcustomplot.h \
+    osc_class.h
 
 FORMS    += mainwindow.ui
+
+LIBS += -lfftw3
